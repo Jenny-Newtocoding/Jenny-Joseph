@@ -14,13 +14,14 @@
             color: #333;
         }
         .header {
-            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            background: url('https://images.unsplash.com/photo-1506748686214e9df14f6c8d3d0e6b08a7c65b39c94e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDExfHxpbm5vdmF0aW9ufGVufDE2NzQ3OTI3NDg&ixlib=rb-1.2.1&q=80&w=1920') no-repeat center center/cover;
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
             position: relative;
             overflow: hidden;
-            border-bottom: 5px solid #a777e3;
+            border-bottom: 5px solid #004b8d;
+            background-attachment: fixed;
         }
         .header::before {
             content: '';
@@ -37,12 +38,12 @@
         }
         .header h1 {
             margin: 0;
-            font-size: 3rem;
+            font-size: 3.5rem;
             position: relative;
             z-index: 1;
         }
         .header p {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             margin-top: 10px;
             position: relative;
             z-index: 1;
@@ -56,11 +57,11 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #6e8efb;
-            border-bottom: 3px solid #6e8efb;
+            color: #004b8d;
+            border-bottom: 3px solid #004b8d;
             padding-bottom: 10px;
             margin-bottom: 20px;
-            font-size: 1.8rem;
+            font-size: 2rem;
             position: relative;
         }
         h2::after {
@@ -68,9 +69,9 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 50px;
+            width: 60px;
             height: 3px;
-            background: #a777e3;
+            background: #0074d9;
             border-radius: 5px;
         }
         .section {
@@ -84,31 +85,32 @@
             transition: color 0.3s, transform 0.3s;
         }
         ul li:hover {
-            color: #a777e3;
+            color: #0074d9;
             transform: translateX(10px);
         }
         .contact-info li {
             margin-bottom: 10px;
         }
         .contact-info a {
-            color: #6e8efb;
+            color: #004b8d;
             text-decoration: none;
             transition: color 0.3s;
         }
         .contact-info a:hover {
-            color: #a777e3;
+            color: #0074d9;
             text-decoration: underline;
         }
         .skill-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            gap: 20px;
+            justify-content: space-between;
         }
         .skill-list li {
             background: #e8f4f8;
             border: 1px solid #c1e2f7;
             border-radius: 8px;
-            padding: 15px;
+            padding: 20px;
             flex: 1 1 calc(33.333% - 20px);
             box-sizing: border-box;
             transition: background 0.3s, transform 0.3s;
@@ -212,26 +214,23 @@
         <div class="section">
             <h2>Skills</h2>
             <ul class="skill-list">
-                <li>Data Analysis (Power BI, DAX)</li>
-                <li>Advanced Excel and Data Modeling (Pivot, VBA, Power Query)</li>
-                <li>Basic SQL Knowledge, Tally Prime</li>
-                <li>Financial Reconciliation and Reporting</li>
-                <li>Audit and Compliance Management</li>
-                <li>Process Automation and Efficiency</li>
-                <li>Due diligence</li>
-                <li>Project Management</li>
+                <li><strong>Financial Auditing:</strong> Comprehensive auditing experience with strong analytical skills.</li>
+                <li><strong>Risk Management:</strong> Expertise in identifying, assessing, and mitigating financial risks.</li>
+                <li><strong>Process Optimization:</strong> Proven ability to streamline and improve financial processes.</li>
+                <li><strong>Team Leadership:</strong> Experienced in leading and training audit teams effectively.</li>
+                <li><strong>Automation:</strong> Skilled in implementing automation to enhance efficiency.</li>
+                <li><strong>Report Preparation:</strong> Proficient in preparing detailed financial and performance reports.</li>
+                <li><strong>Client Relations:</strong> Strong ability to build and maintain professional relationships.</li>
             </ul>
         </div>
         <div class="section">
             <h2>Contact</h2>
             <ul class="contact-info">
-                <li>Email: <a href="mailto:jenny.joseph@example.com">jenny.joseph@example.com</a></li>
-                <li>LinkedIn: <a href="linkedin.com/in/jenny-joseph-9272a7158" target="_blank">http://linkedin.com/in/jenny-joseph-9272a7158</a></li>
-                <li>Phone: +91-9004521612</li>
-                <li>Location: Mumbai, India</li>
+                <li><strong>Email:</strong> <a href="mailto:jenny.joseph@example.com">jenny.joseph@example.com</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jennyjoseph" target="_blank">linkedin.com/in/jennyjoseph</a></li>
+                <li><strong>Phone:</strong> +91-XXXXXXXXXX</li>
             </ul>
         </div>
     </div>
 </body>
 </html>
-
