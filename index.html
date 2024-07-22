@@ -4,59 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenny Joseph - Personal Webpage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f5;
+            background: #f4f4f9;
             color: #333;
         }
         .header {
-            background: linear-gradient(135deg, #1e90ff, #00bcd4);
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
             color: white;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
-            border-bottom: 5px solid #00bcd4;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid #a777e3;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: pulse 10s infinite;
+            z-index: 0;
         }
         .header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 3rem;
+            position: relative;
+            z-index: 1;
         }
         .header p {
             font-size: 1.2rem;
             margin-top: 10px;
+            position: relative;
+            z-index: 1;
         }
         .container {
-            padding: 20px;
-            max-width: 900px;
+            padding: 40px;
+            max-width: 1000px;
             margin: 20px auto;
-            background-color: white;
+            background: white;
             border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
-        h1, h2 {
-            color: #1e90ff;
+        h2 {
+            color: #6e8efb;
+            border-bottom: 3px solid #6e8efb;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 3px;
+            background: #a777e3;
+            border-radius: 5px;
         }
         .section {
             margin-bottom: 30px;
         }
-        .section h2 {
-            border-bottom: 2px solid #1e90ff;
-            padding-bottom: 10px;
-            margin-bottom: 15px;
-        }
         ul {
             padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        ul li:hover {
+            color: #a777e3;
+            transform: translateX(10px);
         }
         .contact-info li {
             margin-bottom: 10px;
         }
         .contact-info a {
-            color: #1e90ff;
+            color: #6e8efb;
             text-decoration: none;
+            transition: color 0.3s;
         }
         .contact-info a:hover {
+            color: #a777e3;
             text-decoration: underline;
         }
         .skill-list {
@@ -65,12 +105,17 @@
             gap: 15px;
         }
         .skill-list li {
-            background-color: #e0f7fa;
-            border: 1px solid #b2ebf2;
-            border-radius: 5px;
-            padding: 10px;
+            background: #e8f4f8;
+            border: 1px solid #c1e2f7;
+            border-radius: 8px;
+            padding: 15px;
             flex: 1 1 calc(33.333% - 20px);
             box-sizing: border-box;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .skill-list li:hover {
+            background: #c1e2f7;
+            transform: translateY(-5px);
         }
         @media (max-width: 768px) {
             .skill-list li {
@@ -80,6 +125,20 @@
         @media (max-width: 480px) {
             .skill-list li {
                 flex: 1 1 100%;
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.2;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0.4;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.2;
             }
         }
     </style>
@@ -160,16 +219,19 @@
                 <li>Audit and Compliance Management</li>
                 <li>Process Automation and Efficiency</li>
                 <li>Due diligence</li>
-                <li>Agile management</li>
+                <li>Project Management</li>
             </ul>
         </div>
         <div class="section">
             <h2>Contact</h2>
             <ul class="contact-info">
-                <li>Phone: +91 9004521612</li>
-                <li>Email: <a href="mailto:jenny_jj15@yahoo.co.in">jenny_jj15@yahoo.co.in</a></li>
+                <li>Email: <a href="mailto:jenny.joseph@example.com">jenny.joseph@example.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/jennyjoseph" target="_blank">linkedin.com/in/jennyjoseph</a></li>
+                <li>Phone: +91-XXXXXXXXXX</li>
+                <li>Location: Mumbai, India</li>
             </ul>
         </div>
     </div>
 </body>
 </html>
+
